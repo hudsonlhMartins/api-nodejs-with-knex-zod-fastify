@@ -6,14 +6,18 @@
   "scripts": {
     "dev": "tsx watch ./src/server",
     "lint": "eslint src --ext .ts --fix",
-    "knex": "node --loader tsx ./node_modules/.bin/knex"
+    "knex": "node --loader tsx ./node_modules/.bin/knex",
+    "test": "vitest"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
     "@types/node": "^20.11.13",
+    "@types/supertest": "^6.0.2",
     "eslint": "^8.56.0",
+    "supertest": "^6.3.4",
     "tsx": "^4.7.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
   },
   "dependencies": {
     "@fastify/cookie": "^9.3.1",
